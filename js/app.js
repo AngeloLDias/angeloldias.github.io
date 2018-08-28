@@ -5,7 +5,7 @@
 
         function alterarfundo(){
             //Ao posicionar o cursor sobre a div
-            // $('.backredes').css('background-image', 'url(../img/backlinkdin.png');
+            $('.backredes').css('background-image', 'url(../img/backlinkdin.png');
             $('.backredes').css('background-size', 'cover');
              $('.icon-13,.icon-15, .icon-17, .icon-26').css('transition', '0.5s');
             // $('.icon-13').css('animation', 'skew 3s infinite');
