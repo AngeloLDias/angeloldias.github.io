@@ -102,7 +102,7 @@ h1 {
 .icon-13 {
   color: #26d991;
   fill: #26d991;
-  /* transition: 1s; */
+  transition: 1s;
 }
 
 .icon-13:hover {
