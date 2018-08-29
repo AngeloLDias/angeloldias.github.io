@@ -1,35 +1,45 @@
-// function bigImg(x) {
-//     x.style.height = "64px";
-//     x.style.width = "64px";
-// }    
+// GITHUB
 
-        function alterarfundoicon13(){
-            //Ao posicionar o cursor sobre a div
-            $('.backredes').css('background-image', 'url(../img/backlinkdin.png');
-            $('.backredes').css('background-size', 'cover');
-             $('.icon-13,.icon-15, .icon-17, .icon-26').css('transition', '0.5s');
-            // $('.icon-13').css('animation', 'skew 3s infinite');
-            // $('.icon-13').css('animation-direction', 'alternate');
-            // $('.backredes').css('transform', 'skewX(25deg)');
-            // $('.backredes').css('transform', 'skewX(25deg)');
-            // $('.backredes').css('transform', 'skewX(25deg)');
-            // $('.backredes').css('transform', 'skewX(25deg)');
+function alterarfundoicon13() {
+    //Ao posicionar o cursor sobre a div
+    $('.backredes').css('background-image', 'url(../img/backgithub.png');
+    $('.backredes').css('background-size', 'cover');
 
-        };
-        function alterarfundoicon15(){
-            //Ao posicionar o cursor sobre a div
-            $('.backredes').css('background', 'red');
-            $('.backredes').css('background-size', 'cover');
-             $('.icon-13,.icon-15, .icon-17, .icon-26').css('transition', '0.5s');
-            // $('.icon-13').css('animation', 'skew 3s infinite');
-            // $('.icon-13').css('animation-direction', 'alternate');
-            // $('.backredes').css('transform', 'skewX(25deg)');
-            // $('.backredes').css('transform', 'skewX(25deg)');
-            // $('.backredes').css('transform', 'skewX(25deg)');
-            // $('.backredes').css('transform', 'skewX(25deg)');
 
-        };
-        function fundonormal(){
-            //Ao posicionar o cursor sobre a div
-            $('.backredes').css('background', '#0e1a25');
-        };
+};
+
+// INSTAGRAM
+
+function alterarfundoicon15() {
+    //Ao posicionar o cursor sobre a div
+    $('.backredes').css('background-image', 'url(../img/backinstagram.png)');
+    $('.backredes').css('background-size', 'cover');
+
+
+};
+// LINKEDIN
+
+function alterarfundoicon17() {
+    //Ao posicionar o cursor sobre a div
+    $('.backredes').css('background-image', 'url(../img/backlinkdin.png)');
+    $('.backredes').css('background-size', 'cover');
+
+
+};
+// TWITTER
+
+function alterarfundoicon26() {
+    //Ao posicionar o cursor sobre a div
+    $('.backredes').css('background-image', 'url(../img/backtwitter.png)');
+    $('.backredes').css('background-size', 'cover');
+
+
+};
+
+// FUNDO-NORMAL
+
+function fundonormal() {
+    //Ao posicionar o cursor sobre a div
+    $('.backredes').css('background', '#0e1a25');
+
+};
