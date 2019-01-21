@@ -12,6 +12,16 @@
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  background-color: #f5eeee;
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 10px;
+}
+
 html {
   height: 100%;
 }
@@ -20,6 +30,13 @@ body {
   background-color: black;
   width: 100%;
   height: 100%;
+}
+
+p,h1 {
+  color: white;
+  // width: 50%;
+  // font-size: 31px;
+  font-family: 'Roboto Condensed';
 }
 
 #triangulo {
@@ -203,6 +220,26 @@ body {
   .jobs__lines {
     margin-right: 54px;
 
+  }
+
+  .responsive__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 135px;
+    }
+
+    p {
+      width: 200px;
+      font-size: 19px;
+    }
+    h1{
+      margin: 10px 0;
+      font-size: 28px;
+      font-weight: 200;
+    }
   }
 }
 
