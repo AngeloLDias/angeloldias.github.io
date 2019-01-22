@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+* {
+  margin: 0;
+  padding: 0; }
+
+body::-webkit-scrollbar {
+  background-color: #f5eeee;
+  width: 4px; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 10px; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+p,
+h1,
+li {
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-weight: 100; }
+
+#contact, #services, #jobs, #sobre-mim {
+  padding-top: 65px; }
+
+#triangulo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #triangulo .triangulo {
+    width: 150px;
+    position: absolute;
+    z-index: 1; }
+  #triangulo .triangulo2 {
+    width: 150px;
+    position: absolute; }
+  #triangulo .triangulo3 {
+    width: 150px;
+    position: absolute; }
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 65px; }
+  .header .header__logo {
+    display: flex;
+    align-items: center; }
+    .header .header__logo img {
+      width: 120px;
+      margin-left: 40px; }
+    .header .header__logo h1 {
+      font-size: 25px;
+      margin-left: 40px; }
+  .header nav ul {
+    display: flex;
+    margin: 0px 30px; }
+    .header nav ul li {
+      color: white;
+      list-style: none;
+      margin: 0 10px;
+      font-size: 20px;
+      cursor: pointer; }
+
+.title__header {
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0; }
+  .title__header .title__line {
+    width: 100px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: orangered; }
+  .title__header .title__line-sub {
+    width: 56px;
+    height: 5px;
+    background-color: orangered;
+    margin: 5px 0; }
+  .title__header h1 {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-weight: 100; }
+
+.top {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .top h1 {
+    color: orange;
+    font-size: 80px;
+    font-family: 'Roboto Condensed'; }
+
+.sobre-mim {
+  width: 100%;
+  height: 100vh; }
+  .sobre-mim .title__lines {
+    margin-right: 75px; }
+  .sobre-mim .sobre__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .sobre-mim .sobre__content p {
+      color: white;
+      width: 50%;
+      font-size: 31px;
+      font-family: 'Roboto Condensed'; }
+    .sobre-mim .sobre__content .sobre___foto {
+      display: flex;
+      width: 307px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 373px; }
+      .sobre-mim .sobre__content .sobre___foto img {
+        box-shadow: 11px 7px 0px orangered; }
+
+.jobs {
+  width: 100%;
+  height: 100vh; }
+  .jobs .title__lines {
+    margin-right: 47px; }
+  .jobs .jobs__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .jobs .jobs__content img {
+      width: 300px;
+      margin: 0 10px;
+      cursor: pointer; }
+    .jobs .jobs__content .img-test {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("../images/portfolio-site03.png");
+      width: 300px;
+      background-position: center;
+      height: 418px;
+      background-repeat: round;
+      background-attachment: fixed;
+      margin: 0 1px;
+      cursor: pointer;
+      transition: 0.5s; }
+      .jobs .jobs__content .img-test:hover {
+        box-shadow: 11px 7px 0px orangered;
+        transition-duration: .5s; }
+      .jobs .jobs__content .img-test img {
+        display: flex;
+        width: 170px;
+        justify-content: center;
+        align-items: center; }
+
+.services {
+  width: 100%;
+  height: 100vh; }
+  .services .title__lines {
+    margin-right: 54px; }
+  .services .responsive__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .services .responsive__content img {
+      width: 135px; }
+    .services .responsive__content p {
+      width: 260px;
+      font-size: 19px; }
+    .services .responsive__content h1 {
+      margin: 10px 0;
+      font-size: 28px;
+      font-weight: 200; }
+
+.contact {
+  height: 50vh; }
+  .contact .title__lines {
+    margin-right: 36px; }
+  .contact .contact__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .contact .contact__content .contact__info h1 {
+      font-size: 30px;
+      color: orangered; }
+    .contact .contact__content .contact__info p {
+      font-size: 20px; }
+    .contact .contact__content .contact__info div {
+      margin: 20px 0; }
+    .contact .contact__content .contact__form img {
+      width: 100px;
+      margin: 0px 25px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
