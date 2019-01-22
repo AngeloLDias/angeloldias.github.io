@@ -19,9 +19,12 @@ body {
   width: 100%;
   height: 100%; }
 
-p, h1 {
+p,
+h1,
+li {
   color: white;
-  font-family: 'Roboto Condensed'; }
+  font-family: 'Roboto Condensed';
+  font-weight: 100; }
 
 #triangulo {
   height: 100%;
@@ -39,10 +42,69 @@ p, h1 {
     width: 150px;
     position: absolute; }
 
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .header .header__logo {
+    display: flex;
+    align-items: center; }
+    .header .header__logo img {
+      width: 120px;
+      margin-left: 40px; }
+    .header .header__logo h1 {
+      font-size: 25px; }
+  .header nav ul {
+    display: flex;
+    margin: 0px 30px; }
+    .header nav ul li {
+      color: white;
+      list-style: none;
+      margin: 0 10px;
+      font-size: 20px;
+      cursor: pointer; }
+
+.title__header {
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0; }
+  .title__header .title__line {
+    width: 100px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: orangered; }
+  .title__header .title__line-sub {
+    width: 56px;
+    height: 5px;
+    background-color: orangered;
+    margin: 5px 0; }
+  .title__header h1 {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-weight: 100; }
+
+.top {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .top h1 {
+    color: orange;
+    font-size: 80px;
+    font-family: 'Roboto Condensed'; }
+
 .sobre-mim {
   width: 100%;
   height: 100vh; }
-  .sobre-mim .jobs__lines {
+  .sobre-mim .title__lines {
     margin-right: 75px; }
   .sobre-mim .sobre__content {
     display: flex;
@@ -63,76 +125,45 @@ p, h1 {
       .sobre-mim .sobre__content .sobre___foto img {
         box-shadow: 11px 7px 0px orangered; }
 
-.top {
+.jobs {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .top h1 {
-    color: orange;
-    font-size: 80px;
-    font-family: 'Roboto Condensed'; }
-
-.jobs__header {
-  text-align: center;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 30px 0; }
-  .jobs__header .jobs__line {
-    width: 100px;
-    height: 5px;
-    margin: 5px 0;
-    background-color: orangered; }
-  .jobs__header .jobs__line-sub {
-    width: 56px;
-    height: 5px;
-    background-color: orangered;
-    margin: 5px 0; }
-  .jobs__header h1 {
-    color: #fff;
-    font-family: 'Roboto Condensed';
-    font-weight: 100; }
-
-.jobs__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-  .jobs__content img {
-    width: 300px;
-    margin: 0 10px;
-    cursor: pointer; }
-  .jobs__content .img-test {
+  height: 100vh; }
+  .jobs .title__lines {
+    margin-right: 47px; }
+  .jobs .jobs__content {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-image: url("../images/portfolio-site03.png");
-    width: 300px;
-    background-position: center;
-    height: 418px;
-    background-repeat: round;
-    background-attachment: fixed;
-    margin: 0 1px;
-    cursor: pointer;
-    transition: 0.5s; }
-    .jobs__content .img-test:hover {
-      box-shadow: 11px 7px 0px orangered;
-      transition-duration: .5s; }
-    .jobs__content .img-test div {
-      background-image: url("../images/rede-dor-sao-luiz-1-original.png"); }
-    .jobs__content .img-test img {
+    justify-content: space-around; }
+    .jobs .jobs__content img {
+      width: 300px;
+      margin: 0 10px;
+      cursor: pointer; }
+    .jobs .jobs__content .img-test {
       display: flex;
-      width: 170px;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      background-image: url("../images/portfolio-site03.png");
+      width: 300px;
+      background-position: center;
+      height: 418px;
+      background-repeat: round;
+      background-attachment: fixed;
+      margin: 0 1px;
+      cursor: pointer;
+      transition: 0.5s; }
+      .jobs .jobs__content .img-test:hover {
+        box-shadow: 11px 7px 0px orangered;
+        transition-duration: .5s; }
+      .jobs .jobs__content .img-test img {
+        display: flex;
+        width: 170px;
+        justify-content: center;
+        align-items: center; }
 
 .services {
   width: 100%;
   height: 100vh; }
-  .services .jobs__lines {
+  .services .title__lines {
     margin-right: 54px; }
   .services .responsive__content {
     display: flex;
@@ -148,10 +179,29 @@ p, h1 {
       font-size: 28px;
       font-weight: 200; }
 
-.jobs {
-  width: 100%;
+.contact {
   height: 100vh; }
-  .jobs .jobs__lines {
-    margin-left: 10px; }
+  .contact .title__lines {
+    margin-right: 36px; }
+  .contact .contact__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .contact .contact__content .contact__info h1 {
+      font-size: 30px;
+      color: orangered; }
+    .contact .contact__content .contact__info p {
+      font-size: 20px; }
+    .contact .contact__content .contact__info div {
+      margin: 20px 0; }
+    .contact .contact__content .contact__form label p {
+      color: orangered;
+      margin: 8px 0;
+      font-size: 20px; }
+    .contact .contact__content .contact__form label input {
+      font-size: 23px;
+      border-radius: 4px;
+      border: none;
+      padding: 12px 9px; }
 
 /*# sourceMappingURL=style.css.map */
